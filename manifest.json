@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Laser Draw",
+  "version": "1.0.1",
+  "description": "Turn your cursor into a glowing laser pointer on any web page.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Laser Draw",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "toggle-laser": {
+      "suggested_key": {
+        "default": "Alt+L",
+        "mac": "Alt+L"
+      },
+      "description": "Toggle laser pointer"
+    }
+  }
+}
